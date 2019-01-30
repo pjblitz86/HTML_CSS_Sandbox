@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Box Model Margin Padding</title>
+    <style>
+      /* css reset get rid of default browser spacing */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .box {
+        background: #f4f4f4;
+        border: 2px #777 solid;
+        width: 500px;
+
+        /* PADDING */
+        /* padding on all sides */
+        padding: 20px;
+
+        /* padding per side will override previous cuz its last */
+        /* padding-top: 10px;
+        padding-right: 20px;
+        padding-bottom: 10px;
+        padding-left: 20px; */
+
+        /* padding shorthand clockwise order */
+        /* padding: 10px 20px 10px 20px; */
+        /* make it even shorter cuz same top-bottom right-left */
+        padding: 10px 20px;
+
+        /* MARGIN - same exact clockwise thing */
+        margin: 10px 20px;
+        /* margin on all sides */
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <h3>Box1</h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+        veritatis explicabo laudantium cupiditate quos minus suscipit. Facere
+        iste obcaecati atque!
+      </p>
+    </div>
+    <div class="box">
+      <h3>Box2</h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate
+        veritatis explicabo laudantium cupiditate quos minus suscipit. Facere
+        iste obcaecati atque!
+      </p>
+    </div>
+  </body>
+</html>
