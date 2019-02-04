@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Flexbox_basics</title>
+    <style>
+      /* when display: flex all children become flex items */
+      #container {
+        display: flex;
+        flex-direction: row;
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        /* flex-flow: row wrap; */
+      }
+
+      .item {
+        background: #f4f4f4;
+        border: 1px solid #ccc;
+        padding: 1rem;
+        text-align: center;
+        /* makes items equal */
+        flex: 1;
+        margin: 0.75rem;
+      }
+
+      /* easy way to setup main area and aside */
+      .item:first-child {
+        flex: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <!-- in flex if more than 12 on screen it wraps on next line or sidescroll appears -->
+      <div class="item"><h3>Item 1</h3></div>
+      <div class="item"><h3>Item 2</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+      <div class="item"><h3>Item 3</h3></div>
+    </div>
+  </body>
+</html>
