@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>VH and VW units</title>
+    <style>
+      /* VH - viewport height consists of always 100 slices, you choose how much the container uses */
+      /* VW - viewport width - same thing 100 slices only it goes across from left to right */
+      /* AWESOME FOR CREATING LANDING PAGES for scrolling down */
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      header {
+        /* background common way for image to cover screen and center */
+        background: #333
+          url("https://images.unsplash.com/photo-1549088521-94b6502fec3d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80")
+          no-repeat center center/cover;
+        color: #fff;
+        height: 100vh;
+        text-align: center;
+        /* width: 50vw; */
+        padding: 2rem;
+        padding-top: 15rem;
+      }
+
+      header h1 {
+        font-size: 3rem;
+      }
+
+      header p {
+        margin: 1rem 0;
+      }
+
+      .btn {
+        display: inline-block;
+        text-decoration: none;
+        background: #f4f4f4;
+        color: #333;
+        padding: 0.75rem 2rem;
+      }
+      /* landing takes up all vh and when we scroll down we see section */
+      section {
+        padding: 2rem;
+      }
+
+      /* for smartphone landscape */
+      @media (max-height: 450px) {
+        header {
+          padding-top: 5rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Welcome To Our Website</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit suscipit
+        error eos numquam cum commodi.
+      </p>
+      <a class="btn" href="#">Find out more</a>
+    </header>
+
+    <section>
+      <h3>About Our Company</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
+        explicabo sequi aspernatur distinctio est, quaerat magni unde
+        perspiciatis harum beatae et eum eos? Ipsum sint consequuntur eum enim
+        consequatur placeat voluptates quae accusamus tenetur distinctio
+        inventore possimus aliquid rerum, facere libero eligendi rem! Laboriosam
+        excepturi corporis quasi ex eaque quisquam.
+      </p>
+    </section>
+  </body>
+</html>
