@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Em and Rem Units</title>
+    <!-- <style>
+      #box-1 {
+        font-size: 20px;
+      }
+
+      #box-1 p {
+        font-size: 1.5em;
+        /* ISSUES WITH USING EM uses REM */
+        /* padding is now reacting directly to computed self element not the parent */
+        padding: 1em;
+      }
+
+      #box-1 ul {
+        /* nested ul now reacts to its parent computed ul not starting parent */
+        font-size: 1.2em;
+      }
+    </style> -->
+
+    <!-- REM units are always calculated according to root element not the nearest parent like em so use REM -->
+    <!-- another reason to use REM is browser settings where font size can be changed so your rem scales whereas px and em not -->
+    <style>
+      /* root element html */
+      html {
+        font-size: 10px;
+      }
+
+      #box-2 h3 {
+        font-size: 2rem;
+      }
+
+      #box-2 p {
+        font-size: 1.6rem;
+        line-height: 1.7rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div id="box-1">
+      <h3>Box One</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa hic, aut
+        id architecto pariatur atque veniam. Sed velit repellat incidunt.
+      </p>
+      <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>
+          3
+          <ul>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+        </li>
+        <li>4</li>
+      </ul>
+    </div> -->
+    <div id="box-2">
+      <h3>Box Two</h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa hic, aut
+        id architecto pariatur atque veniam. Sed velit repellat incidunt.
+      </p>
+    </div>
+  </body>
+</html>
