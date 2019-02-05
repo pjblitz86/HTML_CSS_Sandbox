@@ -3,10 +3,9 @@
   text-align: center;
 }
 
-#nabar ul,
+#navbar ul,
 #navbar ul li {
   float: none;
-  width: 100vw;
 }
 
 #navbar ul li a {
