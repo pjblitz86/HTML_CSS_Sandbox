@@ -1,3 +1,7 @@
+:root {
+  --primary-color: rgb(14, 4, 107, 0.7);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -33,7 +37,7 @@ body {
 
 #navbar ul li:hover {
   cursor: pointer;
-  background: coral;
+  background: var(--primary-color);
   color: #fff;
 }
 
@@ -60,7 +64,7 @@ body {
 }
 
 #navbar ul li:hover ul li:hover {
-  background: #e0e0e0;
+  background: #5665e9;
   color: inherit;
 }
 
@@ -76,4 +80,15 @@ body {
 
 #navbar ul li:hover ul li:hover span {
   background: chocolate;
+}
+
+#showcase {
+  display: flex;
+  background: var(--primary-color);
+  flex-direction: column;
+  height: 300px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 2rem;
 }
