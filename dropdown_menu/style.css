@@ -1,5 +1,6 @@
 :root {
   --primary-color: rgb(14, 4, 107, 0.7);
+  --secondary-color: chocolate;
 }
 
 * {
@@ -71,7 +72,7 @@ body {
 #navbar ul li:hover ul li span {
   float: right;
   color: #fff;
-  background: coral;
+  background: var(--secondary-color);
   padding: 0.2rem 0.5rem;
   text-align: center;
   font-size: 0.8rem;
@@ -79,7 +80,7 @@ body {
 }
 
 #navbar ul li:hover ul li:hover span {
-  background: chocolate;
+  background: var(--secondary-color);
 }
 
 #showcase {
@@ -91,4 +92,9 @@ body {
   justify-content: center;
   text-align: center;
   padding: 0 2rem;
+}
+
+#showcase h1 {
+  color: #fff;
+  font-size: 4rem;
 }
