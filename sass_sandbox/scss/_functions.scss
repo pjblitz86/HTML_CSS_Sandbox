@@ -6,3 +6,10 @@
     @return #fff;
   }
 }
+
+// transform mixin - for reusibility
+@mixin transform($property) {
+  --webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
