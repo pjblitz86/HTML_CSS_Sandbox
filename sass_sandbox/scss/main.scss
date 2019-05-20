@@ -11,3 +11,39 @@ body {
   font-family: $font-stack;
   line-height: 1.5;
 }
+
+// sass nesting - can structure like html, with basic css you would have to use selectors
+header {
+  background: $dark-color;
+  color: $light-color;
+  padding: 1rem;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.section {
+  padding: 3rem;
+  h3 {
+    font-size: 2rem;
+  }
+
+  //  & replaces parent so you can nest-style
+  &-a {
+    background: $primary-color;
+    color: #fff;
+  }
+  &-b {
+    background: $secondary-color;
+    color: #fff;
+  }
+}
+
+// pseudo classes
+a {
+  color: #333;
+  &:hover {
+    color: coral;
+  }
+}
