@@ -40,10 +40,26 @@ header {
   }
 }
 
-// pseudo classes
-a {
-  color: #333;
-  &:hover {
-    color: coral;
+// extended styles for reusibility
+%btn-shared {
+  display: inline-block;
+  padding: 0.7rem 2rem;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  margin-top: 1rem;
+}
+
+// inheritance
+.btn {
+  &-light {
+    @extend %btn-shared;
+    background-color: $light-color;
+    color: #333;
+  }
+  &-dark {
+    @extend %btn-shared;
+    background-color: $dark-color;
+    color: #fff;
   }
 }
